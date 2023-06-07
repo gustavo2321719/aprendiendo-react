@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Carteles from './componentes/carteles';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Cantantes</h1>
+      <div>
+        <Carteles
+          numero="1"
+        />
+        <Carteles
+          numero="2"
+        />
+        <Carteles
+          numero="3"
+        />
+      </div>
     </div>
   );
 }
