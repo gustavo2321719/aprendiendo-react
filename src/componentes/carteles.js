@@ -1,11 +1,15 @@
 import React from "react"
+import "./carteles.css"
 function Carteles(props) {
   return (
     <div className="paneles">
-      <h2>panel {props.numero}</h2>
+      <div className="contenedor-imagen">
+        <img src={`./img/${props.imagen}.jpg`} alt="cantante" className="imagen-de-cantante" />
+      </div>
+
+      <div><h2>¿Quién es {props.cantante}?</h2></div>
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, reiciendis magnam! Consectetur numquam dolores aperiam accusantium placeat tempora, necessitatibus quas quam, veritatis culpa fuga hic cupiditate fugit quidem tempore exercitationem.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, reiciendis magnam! Consectetur numquam dolores aperiam accusantium placeat tempora, necessitatibus quas quam, veritatis culpa fuga hic cupiditate fugit quidem tempore exercitationem.</p>
+        <p>{props.descripcion}</p>
       </div>
     </div>
   );

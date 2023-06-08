@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    text-align: justify;
+    padding: 20px;
+}
+
+.paneles {
+    min-width: 240px;
+    padding: 20px 5px;
+    margin-bottom: 30px;
+    background-color: #f7f6f5;
+    display: block;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.imagen-de-cantante {
+    width: 90%;
+    height: 250px;
+    border-radius: 20px;
+    border: solid 3px;
+    border-color: #9cbff7;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.imagen-de-cantante:hover {
+    scale: 1.01;
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
