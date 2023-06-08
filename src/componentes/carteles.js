@@ -2,7 +2,7 @@ import React from "react"
 import "./carteles.css"
 function Carteles(props) {
   return (
-    <div className="paneles">
+    <div className={`paneles`}>
       <div className="contenedor-imagen">
         <img src={`./img/${props.imagen}.jpg`} alt="cantante" className="imagen-de-cantante" />
       </div>
