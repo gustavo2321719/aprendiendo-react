@@ -4,12 +4,12 @@ function Carteles(props) {
   return (
     <div className={`paneles`}>
       <div className="contenedor-imagen">
-        <img src={`./img/${props.imagen}.jpg`} alt="cantante" className="imagen-de-cantante" />
+        <label htmlFor={`btn-modal-${props.numeroModal}`}>
+          <img src={`./img/${props.imagen}.jpg`} alt="cantante" className="imagen-de-cantante" /></label>
       </div>
-
-      <div><h2>¿Quién es {props.cantante}?</h2></div>
+      <div><h2 className="h2">¿Quién es {props.cantante}?</h2></div>
       <div>
-        <p>{props.descripcion}</p>
+        <p className="p">{props.descripcion}</p>
       </div>
     </div>
   );
