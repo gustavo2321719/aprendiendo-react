@@ -1,9 +1,11 @@
 import './App.css';
 import Carteles from './componentes/carteles';
+import Header from './componentes/header';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <h1>Cantantes</h1>
       <div className='responsive'>
         <Carteles
