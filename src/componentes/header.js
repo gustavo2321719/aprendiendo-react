@@ -5,7 +5,7 @@ function Header() {
     const toggleBtn = document.querySelector(".toggle_btn");
     const toggleBtnIcon = document.querySelector(".toggle_btn i");
     const dropDownMenu = document.querySelector(".dropdown_menu");
-    toggleBtn.onclick = function () {
+    function onClickBoton() {
         dropDownMenu.classList.toggle("open");
         const isOpen = dropDownMenu.classList.contains("open");
 
@@ -23,7 +23,7 @@ function Header() {
                     <li><a href="ayuda">ayuda</a></li>
                 </ul>
                 <a href="#" className="action_btn">comprar</a>
-                <div className="toggle_btn">
+                <div className="toggle_btn" onClick={onClickBoton}>
                     <i className="fa-solid fa-bars"></i>
                 </div>
             </div>
