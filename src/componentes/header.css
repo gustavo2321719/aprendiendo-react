@@ -84,6 +84,7 @@ header {
 
 .dropdown_menu.open {
     height: 190px;
+    border: solid 1px black;
 }
 
 .dropdown_menu li {
