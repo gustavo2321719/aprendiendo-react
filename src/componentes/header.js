@@ -2,7 +2,6 @@ import React from "react"
 import "./header.css"
 function Header() {
 
-    const toggleBtn = document.querySelector(".toggle_btn");
     const toggleBtnIcon = document.querySelector(".toggle_btn i");
     const dropDownMenu = document.querySelector(".dropdown_menu");
     function onClickBoton() {
